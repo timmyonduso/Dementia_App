@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- Background color -->
+            <stroke android:width="2dp"
+                android:color="@color/d_black"> <!-- Border width -->
+                <corners android:radius="4dp"/> <!-- Adjust the radius to match the rounded edges of the background -->
+            </stroke>
+        </shape>
+    </item>
+    <!-- Background -->
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/> <!-- Background color -->
+            <corners android:radius="0dp"/> <!-- Adjust the radius for rounded edges -->
+        </shape>
+    </item>
+</layer-list>
