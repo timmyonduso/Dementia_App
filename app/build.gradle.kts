@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "com.example.dementiaapp"
     compileSdk = 34
+    compileSdkPreview = "UpsideDownCake"
 
     defaultConfig {
         applicationId = "com.example.dementiaapp"
@@ -13,6 +14,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

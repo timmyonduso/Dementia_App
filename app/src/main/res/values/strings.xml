@@ -9,4 +9,45 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registration">Registration</string>
+    <string name="otp">Please enter your phone number and Email and we will send OTP to verify</string>
+    <string name="phone_number">Phone Number\n</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="blank" />
+    <string name="name_ex">John Doe</string>
+    <string name="email_ex">johndoe@gmail.com\n</string>
+    <string name="phone_ex">+5578451232</string>
+    <string name="proceed">Proceed</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="dont_have_account">Dont have an account?</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="phone_or_email">Please enter your phone number or email then your password to login into your account</string>
+    <string name="phone_or_email_holder">Phone Number or Email</string>
+    <string name="no_or_email">Number/Email</string>
+    <string name="password">Password\n</string>
+    <string name="signup">Signup</string>
+    <string name="type_of_acc">Type of Account</string>
+    <string name="choose_acc_type">Choose your type of accunt It will be impossible to change</string>
+    <string name="RadioButton1">I am a patient</string>
+    <string name="radioButton2">I am a doctor</string>
+    <string name="patient_option">Find a doctor online access medical report and more</string>
+    <string name="doctor_option">Easiest way to reach your patients face to face</string>
+    <string name="submit_Button">Submit</string>
+    <string name="gender">Whats your gender</string>
+    <string name="to_give_ux">To give better user experience we need to know your gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="age">Whats your age</string>
+    <string name="inc">+</string>
+    <string name="dec">-</string>
+    <string name="reset">Reset</string>
+    <string name="start_no">0</string>
+    <string name="depend">Most treatment depend on it</string>
+    <string name="height">Whats your height</string>
+    <string name="switch_to_ft">Switch to ft</string>
+    <string name="weight_lb">weight - lb</string>
+    <string name="height_cm">height - cm</string>
+
 </resources>
