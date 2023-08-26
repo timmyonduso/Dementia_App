@@ -17,7 +17,7 @@ class SignupActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
         binding.button.setOnClickListener{
-            startActivity(Intent(this, GenderAgeActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
     }
 }

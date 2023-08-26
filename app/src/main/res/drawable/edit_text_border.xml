@@ -2,6 +2,8 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke android:width="2dp"
             android:color="@color/d_black"> <!-- Border width -->
-    <corners android:radius="8dp"/> <!-- Adjust the radius to match the rounded edges of the background -->
+     <!-- Adjust the radius to match the rounded edges of the background -->
     </stroke>
+    <corners android:radius="12dp"/>
+    <solid android:color="@color/grey" />
 </shape>
