@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DocProfileActivity">
+    tools:context=".DocProfileActivity"
+    android:background="#00000000">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/toolbar2"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doctor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Abhinav Matthew"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/Purple"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Florida, United States"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/info_bg"
+                android:drawableStart="@drawable/star"
+                android:drawablePadding="20dp"
+                android:paddingStart="20dp"
+                android:text="(4)"
+                android:textSize="18sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold"
+                style="@android:style/Widget.Button"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/Purple"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/babyPurple"
+            app:elevation="5dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/viewPager"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:text="name"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

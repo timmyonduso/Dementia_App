@@ -38,6 +38,22 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = mAuth?.currentUser
+        updateUI(currentUser)
+    }
+
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+        } else {
+            // Show login form
+        }
+    }
     private fun loginUser(){
         val email = loginEmail!!.text.toString().trim()
         val password = loginPassword!!.text.toString().trim()
