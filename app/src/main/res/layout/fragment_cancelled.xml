@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelledFragment"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/appointments_bg">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/microscope"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Lab Test "
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="[Home Visit]"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-30dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="13:00 - 13:30"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="09/07/2023"
+                android:textSize="20sp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-25dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/app_bg_2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/zoom"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Video Call "
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Dr Patel"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-30dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="10:00 - 10:30"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="22/11/2023"
+                android:textSize="20sp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-25dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

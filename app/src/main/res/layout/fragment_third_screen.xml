@@ -6,27 +6,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".onboarding.screens.ThirdScreen">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/ic_delivery"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/title3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/payment"
+        android:text="Book face-to-face appointment"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/face_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3"/>
 
     <TextView
         android:id="@+id/description3"
@@ -36,7 +39,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
-        android:text="@string/lorem"
+        android:text="Cant go to the hospital? Book video call appointments with your doctor within the app"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,14 +47,16 @@
 
     <TextView
         android:id="@+id/finish"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
+        android:background="@drawable/onboarding_bg"
         android:text="Finish"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

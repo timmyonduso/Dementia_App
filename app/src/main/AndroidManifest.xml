@@ -13,6 +13,33 @@
         android:theme="@style/Theme.DementiaApp"
         tools:targetApi="31">
         <activity
+            android:name=".BottomNavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LifestyleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicalHistroryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendBirdLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WhyUsActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

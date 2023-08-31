@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "54174980479",
+    "project_id": "neurosight-a0b11",
+    "storage_bucket": "neurosight-a0b11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54174980479:android:8cdf128f20b5fa9095624a",
+        "android_client_info": {
+          "package_name": "com.example.dementiaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54174980479-k4m4qq98biba59uhreu5hnfbhbuikcjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dementiaapp",
+            "certificate_hash": "4e7e3ff7710b62448620f0ec75d2a4c246150895"
+          }
+        },
+        {
+          "client_id": "54174980479-k643b3mq1jbh2rvk7vonl92a4kamu8vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW0WdAZWnf_WldoILSa39gi9-kLqrR_9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54174980479-k643b3mq1jbh2rvk7vonl92a4kamu8vj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

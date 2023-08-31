@@ -71,4 +71,21 @@
     <string name="mm_dd_yy">MM/DD/YY</string>
     <string name="choose_doctor">Choose Doctor</string>
     <string name="book_now">Book Now</string>
+    <string name="why_choose_our_medical_services">Why Choose Our Medical Services</string>
+    <string name="breakthrough_in_comprehensive_flexible_care_deliver_models">Breakthrough in Comprehensive Flexible Care Deliver models</string>
+    <string name="optimize_your_health_care_services">Optimize your health care services</string>
+    <string name="boost_employee_engagement">Boost Employee Engagement</string>
+    <string name="accelerate_your_return_on_investment">Accelerate your return on investment</string>
+    <string name="neurosight">Neurosight</string>
+    <string name="john">John</string>
+    <string name="search">Search</string>
+    <string name="about_medicare">About Medicare</string>
+    <string name="all_in_one_worksite_health_solution">All in one Worksite Health Solution</string>
+    <string name="_25_years_of_experience_in_medical_services">25 Years of Experience In Medical Services</string>
+    <string name="medicare_huh">Introducing Medicare, the revolutionary app designed to seamlessly bridge the gap between patients and doctors, making healthcare access effortless. With a user-friendly interface, it not only facilitates quick appointments but also provides invaluable resources and information about dementia, empowering users and their families with essential knowledge and support.</string>
+    <string name="Home">Home</string>
+    <string name="Appointment">Appointment</string>
+    <string name="Chat">Chat</string>
+    <string name="Profile">Profile</string>
+    <string name="Article">Article</string>
 </resources>

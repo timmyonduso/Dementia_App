@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Home">Home</string>
+    <string name="Appointment">Appointment</string>
+    <string name="Chat">Chat</string>
+    <string name="Profile">Profile</string>
+    <string name="Article">Article</string>
+</resources>

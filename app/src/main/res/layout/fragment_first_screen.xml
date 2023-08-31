@@ -6,28 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".onboarding.screens.FirstScreen">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Schedule appointment with expert doctors"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginTop="150dp"
-        android:src="@drawable/ic_food"
+        android:src="@drawable/appointment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/food"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/description"
@@ -37,22 +40,25 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
-        android:text="@string/lorem"
+        android:text="Find experienced specialist doctors with expert ratings and reviews, and book your appointment hassle free"
         android:textSize="16sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
         android:id="@+id/next"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
+        android:background="@drawable/onboarding_bg"
         android:text="Next"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
