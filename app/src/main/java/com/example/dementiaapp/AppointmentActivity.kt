@@ -15,8 +15,8 @@ class AppointmentActivity : AppCompatActivity() {
         binding = ActivityAppointmentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var viewPager = findViewById<ViewPager>(R.id.viewPager)
-        var tablayout = findViewById<TabLayout>(R.id.tablayout)
+        val viewPager = findViewById<ViewPager>(R.id.viewPager)
+        val tablayout = findViewById<TabLayout>(R.id.tablayout)
 
         val fragmentAdapter = ViewPagerAdapter(supportFragmentManager)
         fragmentAdapter.addFragment(UpcomingFragment(),"Upcoming")
