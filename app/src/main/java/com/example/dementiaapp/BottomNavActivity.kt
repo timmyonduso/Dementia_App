@@ -3,8 +3,12 @@ package com.example.dementiaapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 
 class BottomNavActivity : AppCompatActivity() {
 
@@ -52,6 +56,8 @@ class BottomNavActivity : AppCompatActivity() {
                 else -> false
             }
         }
+
+
 
 
     }

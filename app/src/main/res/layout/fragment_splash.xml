@@ -3,8 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashFragment"
-    android:background="@drawable/ic_splash_screen">
+    tools:context=".SplashFragment">
 
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/community22"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="50dp"/>
 
 </FrameLayout>

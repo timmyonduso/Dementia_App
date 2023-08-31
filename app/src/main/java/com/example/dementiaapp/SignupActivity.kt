@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.dementiaapp.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -45,6 +46,24 @@ class SignupActivity : AppCompatActivity() {
         databaseReference = FirebaseDatabase.getInstance().reference
 
     }
+
+    override fun onStart() {
+        super.onStart()
+
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = mAuth?.currentUser
+        updateUI(currentUser)
+    }
+
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+        } else {
+            // Show login form
+        }
+    }
+
     private fun createUser(){
 
         val name = regName!!.text.toString().trim()

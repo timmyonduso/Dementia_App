@@ -38,22 +38,6 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = mAuth?.currentUser
-        updateUI(currentUser)
-    }
-
-    private fun updateUI(currentUser: FirebaseUser?) {
-        if (currentUser != null) {
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
-        } else {
-            // Show login form
-        }
-    }
     private fun loginUser(){
         val email = loginEmail!!.text.toString().trim()
         val password = loginPassword!!.text.toString().trim()
@@ -70,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful){
                     Toast.makeText(this,"User logged in successfully",
                         Toast.LENGTH_LONG).show()
-                    startActivity(Intent(this,HomeActivity::class.java))
+                    startActivity(Intent(this,AccountTypeActivity::class.java))
                 }else{
                     Toast.makeText(this,"User log in failed",
                         Toast.LENGTH_LONG).show()

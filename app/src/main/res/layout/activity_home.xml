@@ -8,6 +8,14 @@
     tools:context=".HomeActivity"
     android:background="#00000000">
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:openDrawer="start"
+        tools:context=".HomeActivity">
+
     <include layout="@layout/toolbar2"/>
 
 <ScrollView
@@ -23,6 +31,33 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Hey"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/person_pin"
+                android:layout_marginStart="80dp"/>
+
+
+        </LinearLayout>
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -1118,6 +1153,15 @@
 
 </ScrollView>
 
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
@@ -1137,5 +1181,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/my_menu"/>
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mynav" />
 
 </RelativeLayout>
