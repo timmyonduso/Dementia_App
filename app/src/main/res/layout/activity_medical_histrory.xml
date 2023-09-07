@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
+    tools:context=".MedicalHistroryActivity"
     android:background="#00000000">
 
     <include layout="@layout/toolbar2"/>
@@ -95,7 +95,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Chronic Disease"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -113,7 +113,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Add Info"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 android:textAlignment="viewStart" />
 
@@ -139,7 +139,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Stage"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -157,7 +157,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Add Info"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -183,7 +183,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Allergies"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -201,7 +201,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Add Info"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -227,7 +227,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Current Medication"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -245,7 +245,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Add Info"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -271,7 +271,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Past Medication"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -289,7 +289,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Add Info"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -315,7 +315,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Injuries"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -333,7 +333,7 @@
                                 android:paddingStart="20dp"
                                 android:text="Add Info"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"
                                 style="@android:style/Widget.Button"
                                 android:textAlignment="viewStart" />
@@ -342,6 +342,7 @@
                         </LinearLayout>
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/logout"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             style="@android:style/Widget.Button"
@@ -349,7 +350,7 @@
                             android:layout_marginEnd="32dp"
                             android:layout_marginStart="32dp"
                             android:layout_marginTop="16dp"
-                            android:text="Back to Main page"
+                            android:text="Logout"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
                             android:textSize="18sp"/>

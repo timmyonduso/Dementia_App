@@ -39,13 +39,13 @@
             android:layout_marginTop="10dp">
 
             <TextView
-                android:layout_width="80dp"
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:text="Hey"
                 android:textSize="20sp"/>
             <TextView
                 android:id="@+id/userName"
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="20sp"/>
@@ -109,14 +109,13 @@
 
                         <Button
                             android:id="@+id/button4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
-                            android:text="@string/know_more"
-                            android:textColor="@color/Purple"
-                            android:textAlignment="viewStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:background="@drawable/show_more_bg"
                             android:gravity="start"
-                            />
+                            android:text="@string/know_more"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/Purple" />
 
 
                     </LinearLayout>
@@ -162,9 +161,9 @@
 
                         <Button
                             android:id="@+id/button5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:background="@drawable/show_more_bg"
                             android:text="@string/know_more"
                             android:textColor="@color/Purple"
                             android:textAlignment="viewStart"
@@ -215,9 +214,9 @@
 
                         <Button
                             android:id="@+id/button6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:background="@drawable/show_more_bg"
                             android:text="@string/know_more"
                             android:textColor="@color/Purple"
                             android:textAlignment="viewStart"
@@ -268,9 +267,9 @@
 
                         <Button
                             android:id="@+id/button7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:background="@drawable/show_more_bg"
                             android:text="@string/know_more"
                             android:textColor="@color/Purple"
                             android:textAlignment="viewStart"
@@ -321,9 +320,9 @@
 
                         <Button
                             android:id="@+id/button73"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:background="@drawable/show_more_bg"
                             android:text="@string/know_more"
                             android:textColor="@color/Purple"
                             android:textAlignment="viewStart"
@@ -410,9 +409,9 @@
 
                             <Button
                                 android:id="@+id/button236"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:text="@string/more"
                                 android:textColor="@color/Purple"
                                 android:textAlignment="center"
@@ -450,9 +449,9 @@
 
                             <Button
                                 android:id="@+id/button478"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:text="@string/more"
                                 android:textColor="@color/Purple"
                                 android:textAlignment="center"
@@ -489,9 +488,9 @@
 
                             <Button
                                 android:id="@+id/button452"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:text="@string/more"
                                 android:textColor="@color/Purple"
                                 android:textAlignment="center"
@@ -528,9 +527,9 @@
 
                             <Button
                                 android:id="@+id/button4584"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:text="@string/more"
                                 android:textColor="@color/Purple"
                                 android:textAlignment="center"
@@ -627,9 +626,9 @@
 
                             <Button
                                 android:id="@+id/button4444"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:gravity="start"
                                 android:text="@string/know_more"
                                 android:textAlignment="viewStart"
@@ -679,9 +678,9 @@
 
                             <Button
                                 android:id="@+id/button5555"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#FFF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:gravity="start"
                                 android:text="@string/know_more"
                                 android:textAlignment="viewStart"
@@ -731,9 +730,9 @@
 
                             <Button
                                 android:id="@+id/button6667"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:gravity="start"
                                 android:text="@string/know_more"
                                 android:textAlignment="viewStart"
@@ -783,9 +782,9 @@
 
                             <Button
                                 android:id="@+id/button5557"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:background="@drawable/show_more_bg"
                                 android:gravity="start"
                                 android:text="@string/know_more"
                                 android:textAlignment="viewStart"
@@ -884,11 +883,14 @@
                         android:textColor="@color/white"/>
 
                     <Spinner
-                        android:id="@+id/county_spinner2"
+                        android:id="@+id/county_spinner"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="start|bottom"
-                        android:visibility="gone"/>
+                        android:minHeight="48dp"
+                        android:popupBackground="@color/babyPurple"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="30dp"/>
                 </FrameLayout>
 
                 <FrameLayout
@@ -896,8 +898,7 @@
                     android:layout_height="70dp"
                     android:minHeight="48dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/edit_text_border"
-                    >
+                    android:background="@drawable/edit_text_border">
 
                     <TextView
                         android:id="@+id/spinner_hint"
@@ -911,12 +912,14 @@
                         android:gravity="start"
                         android:textColor="@color/white"/>
 
-                    <Spinner
-                        android:id="@+id/county_spinner"
+                    <TextView
+                        android:id="@+id/contact_details_text_view"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|bottom"
-                        android:visibility="gone"/>
+                        android:layout_height="105dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="30dp"/>
+
                 </FrameLayout>
 
                 <EditText
@@ -1145,10 +1148,150 @@
             </RelativeLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".TestimonialActivity"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What people say"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Testimonials"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/testimonials"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/testimonial_bg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carl Johnson"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_65_years"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testimonial1"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/testimonials2"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/testimonial_bg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Love Sosa"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_77_years"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testimonial2"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/testimonials3"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/testimonial_bg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saint Lauren"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_71_years"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testimonial3"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 </ScrollView>

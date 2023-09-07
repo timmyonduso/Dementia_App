@@ -12,9 +12,5 @@ class SuccessActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivitySuccessBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.button3.setOnClickListener {
-            startActivity(Intent(this, Horizontal_ScrollView::class.java ))
-        }
     }
 }

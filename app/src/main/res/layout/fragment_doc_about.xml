@@ -7,7 +7,6 @@
     tools:context=".DocAboutFragment"
     android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,11 +32,11 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:text="Make an appointment"
+        android:text="Chat With Dr Abinhav"
         android:textColor="@color/white"
         android:background="@drawable/doc_btn"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"/>
 
 

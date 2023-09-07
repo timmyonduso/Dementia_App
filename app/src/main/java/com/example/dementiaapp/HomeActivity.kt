@@ -1,29 +1,24 @@
 package com.example.dementiaapp
 
 import android.annotation.SuppressLint
-import android.app.Dialog
 import android.content.Intent
-import android.media.Image
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.Window
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.ImageView
+import android.widget.Spinner
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.dementiaapp.databinding.ActivityHomeBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 
 class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelectedListener  {
 
@@ -31,9 +26,9 @@ class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
     private lateinit var bottomNavigationView : BottomNavigationView
     private lateinit var drawer: DrawerLayout
     private lateinit var auth: FirebaseAuth
-    private lateinit var databaseReference: DatabaseReference
-    private lateinit var dialog:Dialog
     private lateinit var uid:String
+    private lateinit var textViewUserName: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,18 +36,20 @@ class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
         setContentView(binding.root)
 
         binding.button4.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
-
-        binding.button8.setOnClickListener {
-            startActivity(Intent(this, WhyUsActivity::class.java))
-        }
-
-        binding.textView11.setOnClickListener {
-            startActivity(Intent(this, AboutActivity::class.java))
+            startActivity(Intent(this, AppointmentActivity::class.java))
         }
         binding.button5.setOnClickListener {
+            startActivity(Intent(this, DocProfileActivity::class.java))
+        }
+        binding.button6.setOnClickListener {
+            startActivity(Intent(this, ArticleActivity::class.java))
+        }
+
+        binding.button7.setOnClickListener {
             startActivity(Intent(this, AppointmentActivity::class.java))
+        }
+        binding.button73.setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
         }
 
 //                code for toolbar
@@ -92,7 +89,7 @@ class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
                 }
                 R.id.infooo -> {
                     // Handle the "Search" action
-                    val intent = Intent(this, HomeActivity::class.java)
+                    val intent = Intent(this, ChatActivity::class.java)
                     startActivity(intent)
                     true
                 }
@@ -104,7 +101,7 @@ class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
                 }
                 R.id.infooo2 -> {
                     // Handle the "Search" action
-                    val intent = Intent(this, HomeActivity::class.java)
+                    val intent = Intent(this, ArticleActivity::class.java)
                     startActivity(intent)
                     true
                 }
@@ -112,18 +109,71 @@ class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
             }
         }
 
+
         auth = FirebaseAuth.getInstance()
         uid = auth.currentUser?.uid.toString()
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Users")
-        if (uid.isNotEmpty()){
+        val counties = arrayOf("Personalized Care Services", "In-home Health Care", "Professional Medical Examination", "Complete medical Supply")
+        val spinner = findViewById<Spinner>(R.id.county_spinner)
+        if (spinner != null) {
+            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, counties)
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner.adapter = adapter
+        }
 
-            getUserData()
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                val selectedCounty = counties[position]
+                val contactDetails = when (selectedCounty) {
+                    "Personalized Care Services" -> "Dr. Patel"
+                    "In-home Health Care" -> "Dr Mahbed"
+                    "Professional Medical Examination" -> "Dr Raheem"
+                    "Complete medical Supply" -> "Dr Hicks"
+                    else -> "No contact information available"
+                }
+            // display contactDetails in a TextView or similar widget
+                val textView = findViewById<TextView>(R.id.contact_details_text_view)
+                textView.text = contactDetails
+                textView.setOnClickListener {
+                    val phoneNumber = when (selectedCounty) {
+                        "1" -> "Dr Hobson"
+                        "2" -> "Dr Clarkson"
+                        "3" -> "Dr Hicks"
+                        "4" -> "Dr Warrick"
+                        else -> ""
+                    }
+                    val intent = Intent(Intent.ACTION_DIAL)
+                    intent.data = Uri.parse("tel:$phoneNumber")
+                    startActivity(intent)
 
+                }
 
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                // do nothing
+            }
+        }
+
+        textViewUserName = findViewById(R.id.userName)
+
+        // Check if the user is authenticated
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            // User is signed in
+            val displayName = currentUser.displayName
+            // Split the full name to get the first name
+            val parts = displayName?.split(" ")
+            if (parts != null) {
+                if (parts.isNotEmpty()) {
+                    // Display the user's first name in the TextView
+                    textViewUserName.text = "${parts[0]}"
+                }
+            }
+        } else {
+            // User is not signed in, handle this case as needed
         }
     }
-
 
     //     Menu items click listener
     @SuppressLint("UseSwitchCompatOrMaterialCode")
@@ -179,44 +229,4 @@ class HomeActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
         return true
     }
 
-    private fun getUserData() {
-
-        showProgressBar()
-        databaseReference.child(uid).addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists() && snapshot.getValue(User::class.java) != null) {
-                    val name = snapshot.child("Name").value.toString()
-
-                    binding.userName.text = name
-
-                } else {
-                    hideProgressBar()
-                    Toast.makeText(this@HomeActivity, "Failed to get user profile data", Toast.LENGTH_SHORT).show()
-                }
-                hideProgressBar()
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                hideProgressBar()
-                Toast.makeText(this@HomeActivity, "Failed to get user profile data", Toast.LENGTH_SHORT).show()
-            }
-        })
-
-    }
-
-    private fun showProgressBar(){
-
-        dialog = Dialog(this@HomeActivity)
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialog.setContentView(R.layout.dialog_wait)
-        dialog.setCanceledOnTouchOutside(false)
-        dialog.show()
-
-    }
-
-    private fun hideProgressBar(){
-
-        dialog.dismiss()
-
-    }
 }

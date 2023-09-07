@@ -16,8 +16,8 @@
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_splashFragment_to_signupActivity"
-            app:destination="@id/signupActivity"
+            android:id="@+id/action_splashFragment_to_signInActivity"
+            app:destination="@id/signInActivity"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -27,14 +27,13 @@
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" >
         <action
-            android:id="@+id/action_viewPagerFragment_to_signupActivity"
-            app:destination="@id/signupActivity"
+            android:id="@+id/action_viewPagerFragment_to_signInActivity"
+            app:destination="@id/signInActivity"
             app:popUpTo="@id/viewPagerFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <activity
-        android:id="@+id/signupActivity"
-        android:name="com.example.dementiaapp.SignupActivity"
-        android:label="activity_signup"
-        tools:layout="@layout/activity_signup" />
+        android:id="@+id/signInActivity"
+        android:name="com.example.dementiaapp.SignInActivity"
+        android:label="SignInActivity" />
 </navigation>

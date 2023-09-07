@@ -1,9 +1,9 @@
 package com.example.dementiaapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
@@ -17,6 +17,7 @@ class GenderAgeActivity : AppCompatActivity() {
 
     private var mAuth: FirebaseAuth? = null
     private lateinit var databaseReference: DatabaseReference
+    private lateinit var sharedPreferences: SharedPreferences
     private var age: TextView? = null
 
 
@@ -56,6 +57,23 @@ class GenderAgeActivity : AppCompatActivity() {
             setacctype()
         }
 
+        sharedPreferences = getSharedPreferences("user_details", MODE_PRIVATE)
+
+        // Check if gender and age are already selected
+        val savedGender = sharedPreferences.getString("Gender", null)
+        val savedAge = sharedPreferences.getString("Age", null)
+
+        if (savedGender != null && savedAge != null) {
+            // Gender and age are already selected, skip the entry screens
+            startActivity(Intent(this, HeightWeightActivity::class.java))
+            finish()
+        } else {
+            // Gender and age are not selected, set up the UI and click listener
+            binding.submitButton.setOnClickListener {
+                setacctype()
+            }
+        }
+
     }
     private fun setacctype(){
         val userId = mAuth!!.currentUser!!.uid
@@ -68,6 +86,13 @@ class GenderAgeActivity : AppCompatActivity() {
         } else {
             "Male"
         }
+
+        // Store the user's gender and age in SharedPreferences
+        val editor = sharedPreferences.edit()
+        editor.putString("Gender", gender)
+        editor.putString("Age", miaka)
+        editor.apply()
+
         // Create a hashmap to store the user's details
         val userData = hashMapOf(
             "Gender" to gender,

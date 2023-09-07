@@ -90,4 +90,21 @@
     <string name="Article">Article</string>
     <string name="please_wait">Please wait</string>
     <string name="show_more">Show more</string>
+    <string name="testimonial1">I cannot thank you enough for your understanding and support through some difficult times. I would highly recommend your company to anyone. Your company has made our life easier</string>
+    <string name="_65_years">65 years</string>
+    <string name="_77_years">77 Years\n</string>
+    <string name="testimonial2">The application has been a lifeline, connecting me with doctors promptly during my health concerns. I\'d urge anyone to give it a try. It\'s transformed how I manage my well-being.</string>
+    <string name="_71_years">71 years</string>
+    <string name="testimonial3">Through the app, I\'ve found skilled doctors with ease, making my healthcare journey smoother. Recommending it is a no-brainer; it\'s revolutionized the way I access medical care.</string>
+    <string name="what_people_say">What people say</string>
+    <string name="testimonials">Testimonials</string>
+    <string name="love_sosa">Love Sosa</string>
+    <string name="saint_lauren">Saint Lauren</string>
+    <string name="practice_location">Practice Location</string>
+    <string name="orlando_fl_32809_united_states">Orlando, FL 32809, United States</string>
+    <string name="location_map">Location Map</string>
+    <string name="_4_5">4.5</string>
+    <string name="overall_rating">Overall Rating</string>
+    <string name="_5">5</string>
+    <string name="_207">207</string>
 </resources>

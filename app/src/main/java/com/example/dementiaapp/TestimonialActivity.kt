@@ -1,12 +1,11 @@
 package com.example.dementiaapp
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class Horizontal_ScrollView : AppCompatActivity() {
-
+class TestimonialActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout)
+        setContentView(R.layout.activity_testimonial)
     }
 }

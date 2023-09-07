@@ -131,6 +131,7 @@
                             android:textAlignment="viewStart" />
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/logout"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             style="@android:style/Widget.Button"
@@ -138,7 +139,7 @@
                             android:layout_marginEnd="32dp"
                             android:layout_marginStart="32dp"
                             android:layout_marginTop="16dp"
-                            android:text="Back to Main page"
+                            android:text="Logout"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
                             android:textSize="18sp"/>

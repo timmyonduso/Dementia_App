@@ -1,6 +1,7 @@
 package com.example.dementiaapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioGroup
@@ -15,6 +16,8 @@ class AccountTypeActivity : AppCompatActivity() {
     private var mAuth: FirebaseAuth? = null
     private lateinit var databaseReference: DatabaseReference
     private lateinit var binding:ActivityAccountTypeBinding
+    private lateinit var sharedPreferences: SharedPreferences
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +32,21 @@ class AccountTypeActivity : AppCompatActivity() {
             setacctype()
         }
 
+        sharedPreferences = getSharedPreferences("user_details", MODE_PRIVATE)
+
+        // Check if the account type is already selected
+        val savedAccountType = sharedPreferences.getString("UserType", null)
+        if (savedAccountType != null) {
+            // Account type is already selected, skip the selection screen
+            startActivity(Intent(this, GenderAgeActivity::class.java))
+            finish()
+        } else {
+            // Account type is not selected, set up the UI and click listener
+            binding.submitButton.setOnClickListener {
+                setacctype()
+            }
+        }
+
     }
 
     private fun setacctype(){
@@ -40,6 +58,12 @@ class AccountTypeActivity : AppCompatActivity() {
         } else {
             "Doctor"
         }
+
+        // Store the user's account type in SharedPreferences
+        val editor = sharedPreferences.edit()
+        editor.putString("UserType", selectedUserType)
+        editor.apply()
+
         // Create a hashmap to store the user's details
         val userData = hashMapOf(
             "UserType" to selectedUserType
@@ -64,4 +88,5 @@ class AccountTypeActivity : AppCompatActivity() {
         startActivity(Intent(this,GenderAgeActivity::class.java))
 
     }
+
 }
